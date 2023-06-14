@@ -1,4 +1,4 @@
-/* The following block uses an asterisk, a universal selector, which is will default to apply to the entire webpage until more specific selectors apply different properties and values. */
+/* The following block uses an asterisk, a universal selector, which will default to apply to the entire webpage until more specific selectors apply different properties and values. */
 
 * {
     box-sizing: border-box;
@@ -153,7 +153,7 @@ footer {
 /* The mock-up doesn't have a footer. 
 However, per BCS and Daniel, leave it in. 
 Since footer isn't in mock-up, wasn't sure if h2 should be left alone or made more sequential and into h4 (client could want it h2 for sizing, despite font-size being specified).
-Decided to make it h4 to follow sequential order of heading element.
+Decided to make it h4 to follow sequential order of heading element (Daniel also recommended this).
 If i were to remove the footer, I could erase the entire code for the footer or include display:none, in case the client wanted to retain it but have nothing be visible in the actial website. */
 
 footer h4 {
