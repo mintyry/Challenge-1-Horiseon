@@ -28,12 +28,11 @@ Additionally, we have specified areas all throughout the page that are organized
 
 The following screenshot demonstrates how to use the provided links to go to specific content:
 
-Simply click on the link whose section you'd like to jump to.
+Simply click on the link whose section you'd like to jump to with your mouse cursor.
 ![Click on link using mouse cursor](./assets/images/click-link.png)
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+And voila! You will be at the section of the content you wish to read.
+![Arrive at section](./assets/images/jumped-section.png)
 
 
 ## Credits
