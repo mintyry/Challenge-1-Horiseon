@@ -1,23 +1,63 @@
+/* The following block uses an asterisk, a universal selector, which is will default to apply to the entire webpage until more specific selectors apply different properties and values. */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Body is the container for all content, maintaing the specific color for itself */
 body {
     background-color: #d9dcd6;
 }
-
-.header {
+/*header style starts */
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+/* Decided to leave selector as is because although h1 only occurs once, if another dev were to work on this, they could utitlize h1s elsewhere and modify without messing with this particular setting */
+header h1 {
     display: inline-block;
     font-size: 48px;
+}
+
+/* Simplified selector to just seo since there is only one usage of that in html */
+
+.seo {
+    color: #d9dcd6;
+}
+
+/* Simplified selector to just nav, because only one usage in html */
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* consolidated the list-style-type property into the follow block to delete unnecessary header nav ul class selector of code. 
+Navbar links still work and appear properly. */
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+/* This selector targets links; a stands for anchor element */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* This selector targets paragraphs */
+p {
+    font-size: 16px;
 }
 
 /* Moved hero class up here to follow html structure as closely as possible; maybe need to move img content to HTML rather than CSS? */
@@ -30,51 +70,27 @@ body {
     background-position: center;
 }
 
-.header h1 .seo {
-    color: #d9dcd6;
-}
-
-.header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-.header nav ul {
-    list-style-type: none;
-}
-
-.header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
-
+/* These float selectors target the corresponding classes for the images */
 .float-left {
     float: left;
     margin-right: 25px;
+    max-height: 200px;
 }
 
 .float-right {
     float: right;
     margin-left: 25px;
+    max-height: 200px;
 }
 
+/* This targets class "content" */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+
+/* This targets the class of benefits */
 
 .benefits {
     margin-right: 20px;
@@ -87,49 +103,20 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* consolidated all benefit sub classes together, since they all share the same properties and values */
+.benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* consolidated following block of code into h3 since these are the only h3 found in HTML, and every class that uses them share the same properties. */
+h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
+/* consolidated all benefit images into one block of code since they share the same properties and values */
+.benefit-lead img, .benefit-brand img, .benefit-cost img  {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -137,7 +124,9 @@ p {
 /* seo, orm, and smm are under content class, so I think all these blocks of code, which are all the same for each section, may be consolidated under class section instead of improper ids.
 I tried that, and it eliminated all the tables and properties, so instead of putting it under "class," i put them all on one line of selectors. */
 
-.search-engine-optimization, .online-reputation-management, .social-media-marketing {
+/* consolidated selectors into one line */
+
+#search-engine-optimization, #online-reputation-management, #social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -146,33 +135,27 @@ I tried that, and it eliminated all the tables and properties, so instead of put
     color: #ffffff;
 }
 
-/* consolidated selectors into one line */
-.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img  {
-    max-height: 200px;
-}
+/* deleted class selectors "seo," "online rep mgmt," and "smm" for img, because all those attributes in there can be consolidated into .float-left and right selectors */
+/* consolidated class selectors with h2 as only h2 since they all have the same properties and are the only h2s in HTML.*/
 
-.search-engine-optimization h2 {
+h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+/* The mock-up doesn't have a footer. 
+However, per BCS and Daniel, leave it in. 
+Since footer isn't in mock-up, wasn't sure if h2 should be left alone or made more sequential and into h4 (client could want it h2 for sizing, despite font-size being specified).
+Decided to make it h4 to follow sequential order of heading element.
+If i were to remove the footer, I could erase the entire code for the footer or include display:none, in case the client wanted to retain it but have nothing be visible in the actial website. */
+
+footer h4 {
     font-size: 20px;
 }
