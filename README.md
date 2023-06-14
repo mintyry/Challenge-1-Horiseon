@@ -29,7 +29,7 @@ Additionally, we have specified areas all throughout the page that are organized
 The following screenshot demonstrates how to use the provided links to go to specific content:
 
 Simply click on the link whose section you'd like to jump to.
-![Click on link using mouse cursor](./assets/images/click on link.png)
+![Click on link using mouse cursor](assets/images/click on link.png)
 
 Provide instructions and examples for use. Include screenshots as needed.
 
