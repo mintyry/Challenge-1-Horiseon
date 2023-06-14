@@ -2,7 +2,7 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+Horiseon's website allows potential users to see what services they provide.
 
 Client wanted to refactor code as to add accessibility to their webpage.
 
