@@ -8,7 +8,7 @@ Client wanted to refactor code as to add accessibility to their webpage.
 
 I refactored this project to not only meet client's desires, but to also increase accessibility, which would also enhance SEO for this SEO company.
 
-Refactoring solved the problem of accessibility by adding semantic elements as well as alt attributes for those who cannot access webpages nornmally. Also, refactoring allowed the ability to clean up what would be otherwise very redundant coding.
+Refactoring solved the problem of accessibility by adding semantic elements as well as alt attributes for those who cannot access webpages normally. Also, refactoring allowed the ability to clean up what would be otherwise very redundant coding.
 
 In this project, I learned how to make webpages much more accessible. I learned how to clean up code by consolidating various selectors. I also learned how to make sure links can jump to specific areas of a webpage.
 
