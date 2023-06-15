@@ -10,7 +10,7 @@
 body {
     background-color: #d9dcd6;
 }
-/*header style starts */
+/* header style starts */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -40,7 +40,7 @@ nav {
     font-size: 20px;
 }
 
-/* consolidated the list-style-type property into the follow block to delete unnecessary header nav ul class selector of code. 
+/* consolidated the list-style-type property into the following block to delete unnecessary header nav ul class selector of code. 
 Navbar links still work and appear properly. */
 
 header nav ul li {
@@ -90,6 +90,28 @@ p {
     margin-left: 20px;
 }
 
+/* Moved following block of code up here to follow structure of HTML */
+/* seo, orm, and smm are under content class, so I think all these blocks of code, which are all the same for each section, may be consolidated under their corresponding ids.
+I tried that, and it eliminated all the tables and properties, so instead of putting it under "class," i put them all on one line of selectors. */
+/* consolidated selectors into one line */
+
+#search-engine-optimization, #online-reputation-management, #social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* deleted class selectors "seo," "online rep mgmt," and "smm" for img, because all those attributes in there can be consolidated into .float-left and right selectors */
+/* consolidated class selectors with h2 as only h2 since they all have the same properties and are the only h2s in HTML.*/
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
 /* This targets the class of benefits */
 
 .benefits {
@@ -121,27 +143,6 @@ h3 {
     margin: 10px auto;
     max-width: 150px;
 }
-/* seo, orm, and smm are under content class, so I think all these blocks of code, which are all the same for each section, may be consolidated under class section instead of improper ids.
-I tried that, and it eliminated all the tables and properties, so instead of putting it under "class," i put them all on one line of selectors. */
-
-/* consolidated selectors into one line */
-
-#search-engine-optimization, #online-reputation-management, #social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* deleted class selectors "seo," "online rep mgmt," and "smm" for img, because all those attributes in there can be consolidated into .float-left and right selectors */
-/* consolidated class selectors with h2 as only h2 since they all have the same properties and are the only h2s in HTML.*/
-
-h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
 
 footer {
     padding: 30px;
@@ -151,10 +152,10 @@ footer {
 }
 
 /* The mock-up doesn't have a footer. 
-However, per BCS and Daniel, leave it in. 
+However, per BCS and Daniel(TA), leave it in. 
+If i were to remove the footer, I could erase the entire code for the footer or include display:none, in case the client wanted to retain it but have nothing be visible in the actual website.
 Since footer isn't in mock-up, wasn't sure if h2 should be left alone or made more sequential and into h4 (client could want it h2 for sizing, despite font-size being specified).
-Decided to make it h4 to follow sequential order of heading element (Daniel also recommended this).
-If i were to remove the footer, I could erase the entire code for the footer or include display:none, in case the client wanted to retain it but have nothing be visible in the actial website. */
+Decided to leave it as h2 per advisement from instructor and BCS. */
 
 footer h2 {
     font-size: 20px;
