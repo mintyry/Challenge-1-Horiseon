@@ -24,11 +24,8 @@ header h1 {
     font-size: 48px;
 }
 
-/* Simplified selector to just seo since there is only one usage of that in html */
+/* Seeing as we were instructed to focus on semantic elements in HTML, i deleted the span class of "seo" and just changed the font color of "seo" in "Horiseon" within the HTML file by using <font color> */
 
-.seo {
-    color: #d9dcd6;
-}
 
 /* Simplified selector to just nav, because only one usage in html */
 
@@ -153,10 +150,8 @@ footer {
 
 /* The mock-up doesn't have a footer. 
 However, per BCS and Daniel(TA), leave it in. 
-If i were to remove the footer, I could erase the entire code for the footer or include display:none, in case the client wanted to retain it but have nothing be visible in the actual website.
-Since footer isn't in mock-up, wasn't sure if h2 should be left alone or made more sequential and into h4 (client could want it h2 for sizing, despite font-size being specified).
-Decided to leave it as h2 per advisement from instructor and BCS. */
+If i were to remove the footer, I could erase the entire code for the footer or include display:none, in case the client wanted to retain it but have nothing be visible in the actual website. I changed selector from h2 to h4 to follow semantic structure and order in HTML */
 
-footer h2 {
+h4 {
     font-size: 20px;
 }

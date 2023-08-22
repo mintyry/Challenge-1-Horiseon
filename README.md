@@ -16,6 +16,10 @@ After refactoring code for this webpage, users can now access this website in a 
 
 Please enjoy the deployed [application](https://mintyry.github.io/First-Challenge-Horiseon/)!
 
+Here is a screenshot of the full webpage:
+![Screenshot of Horiseon full webpage](./assets/images/01-html-css-git-homework-demo%20copy.png)
+
+
 ## Installation
 
 N/A
@@ -28,7 +32,7 @@ For more convenient accessibility, users can simply click on any of the three li
 
 Additionally, we have specified areas all throughout the page that are organized for a user using a screen reader. Utilizing such, a reader will find that they are in the body of the webpage or the aside and many other sections the webpage contains. Images also have alternative descriptions should the user not be able to view the actual image itself.
 
-The following screenshot demonstrates how to use the provided links to go to specific content:
+The following screenshots demonstrates how to use the provided links to go to specific content:
 
 Simply click on the link whose section you'd like to jump to with your mouse cursor.
 ![Click on link using mouse cursor](./assets/images/click-link.png)
